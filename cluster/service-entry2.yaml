@@ -1,0 +1,14 @@
+metadata:
+  name: example-service
+  namespace: default
+apiVersion: networking.istio.io/v1alpha3
+kind: ServiceEntry
+spec:
+  hosts:
+  - example.com
+  location: MESH_EXTERNAL
+  ports:
+  - number: 8080
+    protocol: HTTP
+    name: http
+  resolution: DNS
