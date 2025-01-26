@@ -1,6 +1,6 @@
 metadata:
   name: example-service
-  namespace: default
+  namespace: learning
 apiVersion: networking.istio.io/v1alpha3
 kind: ServiceEntry
 spec:
